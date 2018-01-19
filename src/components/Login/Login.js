@@ -7,6 +7,7 @@ import {
   TextInput,
   Image
 } from 'react-native';
+import LoginForm from './LoginForm';
 
 export default class Login extends Component {
     render() {
@@ -18,6 +19,9 @@ export default class Login extends Component {
                         source={require('../../images/logo.png')} />
 
                         <Text style={styles.title}>An app made for dating using React Native</Text>
+                        <View style={styles.formContainer}>
+                            <LoginForm />
+                        </View>
                 </View>
             </View>
         );
@@ -31,7 +35,7 @@ const styles = StyleSheet.create({
     },
     logoContainer: {
         alignItems: 'center',
-        flexGlow: 1,
+        flexGrow: 1,
         justifyContent: 'center'
     },
     logo: {
@@ -41,7 +45,7 @@ const styles = StyleSheet.create({
     title: {
         color: '#fff',
         marginTop: 10,
-        width: 100,
+        width: 200,
         textAlign: 'center',
         opacity: 0.9
     }
