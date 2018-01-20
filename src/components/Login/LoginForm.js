@@ -34,8 +34,18 @@ export default class LoginForm extends Component {
                 <TouchableOpacity style={styles.buttonContainer}>
                     <Text style={styles.buttonText}>LOGIN</Text>
                 </TouchableOpacity>
-
+                
+                <View style={styles.signPassContainer}>
+                    <TouchableOpacity>
+                        <Text style={styles.textSignPass}>Create Account</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity>
+                        <Text style={styles.textSignPass}>Forgot Password?</Text>
+                    </TouchableOpacity>
+                </View>
+                
             </View>
+          
         );
     }
 }
@@ -45,19 +55,31 @@ const styles = StyleSheet.create({
         padding: 20
     },
     input: {
+        borderRadius: 20,
         height: 40,
         backgroundColor: 'rgba(255, 255, 255, 0.2)',
         marginBottom: 10,
         color: '#fff',
-        paddingHorizontal: 10
+        paddingHorizontal: 20
     },
     buttonContainer: {
-        backgroundColor: '#2980b9',
+        borderRadius: 20,
+        backgroundColor: '#00BFFF',
         paddingVertical: 15
     },
     buttonText: {
         textAlign: 'center',
         color: '#ffffff',
         fontWeight: '700'
+    },
+    signPassContainer: {
+        top: 10,
+        flexDirection: 'row',
+		justifyContent: 'space-around'
+    },
+    textSignPass: {
+        color: 'white',
+		backgroundColor: 'transparent',
+        
     }
 });
