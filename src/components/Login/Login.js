@@ -19,9 +19,9 @@ export default class Login extends Component {
                         source={require('../../images/logo.png')} />
 
                         <Text style={styles.title}>An app made for dating using React Native</Text>
-                        <View style={styles.formContainer}>
-                            <LoginForm />
-                        </View>
+                </View>
+                <View style={styles.formContainer}>
+                        <LoginForm />
                 </View>
             </View>
         );
