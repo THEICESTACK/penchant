@@ -1,6 +1,6 @@
 Mobile App name : PenChant
 
-Theme Color : Penchant yellow & Peach Pink
+Theme Color : Purple & DeepSkyBlue 
 
 Open Node js command line and type : "react-native run-andriod"
 
