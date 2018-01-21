@@ -8,8 +8,14 @@ import {
   Image,
   TouchableOpacity
 } from 'react-native';
+import {Actions} from 'react-native-router-flux';
 
 export default class LoginForm extends Component {
+
+    signup() {
+		Actions.signup()
+	}
+
     render() {
         return (
             <View style={styles.container}>
@@ -19,6 +25,8 @@ export default class LoginForm extends Component {
                     style={styles.input}
                     underlineColorAndroid="transparent"
                     returnKeyType="next"
+                    autoCorrect={false}
+                    autoCapitalize="none"
                     onSumbitEditing={() => this.passwordInput.focus()}
                 />
                 <TextInput 
@@ -36,7 +44,7 @@ export default class LoginForm extends Component {
                 </TouchableOpacity>
                 
                 <View style={styles.signPassContainer}>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={this.signup}>
                         <Text style={styles.textSignPass}>Create Account</Text>
                     </TouchableOpacity>
                     <TouchableOpacity>
